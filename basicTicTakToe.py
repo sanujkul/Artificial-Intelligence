@@ -49,7 +49,14 @@ def checkWinner():
 def play():
     currentPlayer = random.choice([0,1]);
     for i in range(9):
-        nextTurn(currentPlayer);
+        if (i%2 == 0): # CPU will play
+            nextTurn(currentPlayer);
+        else:
+            yourMove = input("Please choose available positions ({}) : ".format([(x+1) for x in available]));
+            yourMove = int(yourMove) - 1; #As our indexing started from 0
+            available.remove(yourMove);
+            board[yourMove] = players[currentPlayer]
+
         currentPlayer = (currentPlayer+1)%2;
         displayBoard();
         winner = checkWinner();
@@ -57,7 +64,7 @@ def play():
             print("Winner is {}".format(winner));
             break;
         time.sleep(1);
-
+            
     if(checkWinner() is None and len(available)==0):
         print("GAME TIED");
 
