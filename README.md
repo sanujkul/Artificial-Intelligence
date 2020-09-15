@@ -4,6 +4,7 @@
 ### A. 01_basicTicTakToe.py
 ### B. 02_miniMaxTicTakToe.py
 ### C. 03_packmanDFS.py
+### D. 04_packmanBFS.py
 ***
 
 ## A. 01_basicTicTakToe.py
@@ -28,7 +29,23 @@ Blue Nodes - Walls.
 Green Nodes - Searching the path.   
 Pink Nodes - Path taken.  
 
-The working of this appraoch has been uploaded on this [YouTube Video](https://www.youtube.com/watch?v=-vWjmX9M5rg)
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=-vWjmX9M5rg)
 
 Below 2 images show the start and end states respectively-    
 ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_START.png) ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_END.png)
+
+***
+
+## D. 04_packmanBFS.py
+In this program, pacman is simulated and its way to find its goal to end node is demonstarated by using Breath first search Algorithm.  
+Yellow Ball - Pacman. 
+Red Node - Goal Node.  
+Blue Nodes - Walls.  
+Green Nodes - Searching the path.   
+Pink Nodes - Path taken.  
+
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=mbi9hgKg-hU)
+
+Below 2 images show the start and end states respectively-    
+![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_START.png) ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_END.png)
+
