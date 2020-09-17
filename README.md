@@ -10,7 +10,7 @@
 ***
 
 ## i.    01_basicTicTakToe.py
-In this program, the loction to make a move is chose randomly.  
+In this program, the loction to make a move is chosen randomly.  
 ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/01_BasicTicTacToe.png)
 
 ***
