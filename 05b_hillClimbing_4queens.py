@@ -3,12 +3,12 @@ import time;
 
 n = 4; # number  of queens
 #emptyPlaces = [];
-#Following is position where queens will be placed
-queensPositions = ["",(1,2), (2,3), (3,2), (4,3)];
+#Following is position where queens will be placed in the beginning
+queensPositions = ["",(2 ,1), (2,3), (3,2), (4,3)];
 queensPColors = ["",'red', 'blue', 'yellow', 'green'];
 
 grid_side = 50;
-win = GraphWin("8 queens", grid_side*n, grid_side*n);
+win = GraphWin("4 queens", grid_side*n, grid_side*n);
 
 ##################################################################
 ##################################################################
@@ -22,11 +22,19 @@ def initializeGame():
 
    """
    #Coloring the background black
-   win.setBackground(color_rgb(0,0,0)); 
+   win.setBackground(color_rgb(255,255,255)); 
+
 
    # Creating dots in the middle of each square
    for i in range(1,n+1):
       for j in range(1,n+1):
+
+         pt1 = Point((i-1)*grid_side, (j-1)*grid_side)
+         pt2 = Point((i)*grid_side, (j)*grid_side)
+         rect1 = Rectangle(pt1, pt2)
+         rect1.setFill(color_rgb(255,255,255))
+         rect1.draw(win)
+         
          center = Point((i-0.5)*grid_side,(j-0.5)*grid_side);
          cir = Circle(center, 1);
          cir.setFill(color_rgb(255,255,255))
@@ -77,13 +85,13 @@ def findNextMove(curHVal):
          #Calculate the heuristic val
          hVal = heuristicValueOfPosition(tempQueensPositionList);
          #print("in min: hval is {} for {}".format(hVal, tempQueensPositionList))
-         if (hVal < minHCalc):
+         if (hVal <= minHCalc):
             minHCalc = hVal;
             minPlayerMove = queen;
             minNewPosition = move;
          #print("\t\t new return vars are")   
    #print("hVal we are sending back is {}".format(minHCalc));
-   if minHCalc < curHVal:
+   if minHCalc <= curHVal:
       return (minPlayerMove, minNewPosition, minHCalc)
    else:
       return -1; #That we have reached local minima
@@ -194,8 +202,10 @@ def ai():
          print("Reached global minima, can make more moves !");
          break;
 
-      colorNode(queensPositions[queenNewPos[0]], 'black'); #turn old position black
-      
+      # Making node empty
+      colorNode(queensPositions[queenNewPos[0]], 'white'); #turn old position black
+   
+
       queensPositions[queenNewPos[0]] = queenNewPos[1];
 
       colorNode(queensPositions[queenNewPos[0]], queensPColors[queenNewPos[0]]); #turn old position black

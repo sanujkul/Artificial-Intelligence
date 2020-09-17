@@ -4,7 +4,7 @@ import time;
 n = 8; # number  of queens
 #emptyPlaces = [];
 #Following is position where queens will be placed
-queensPositions = ["",(1,2), (2,3), (3,2), (4,3), (5,2), (6,3), (7,2), (8,3),];
+queensPositions = ["",(2,1), (2,3), (3,8), (4,3), (5,2), (6,3), (7,2), (8,3),];
 queensPColors = ["",'red', 'blue', 'yellow', 'green', 'orange', 'pink', 'magenta', 'violet'];
 
 grid_side = 50;
@@ -22,15 +22,24 @@ def initializeGame():
 
    """
    #Coloring the background black
-   win.setBackground(color_rgb(0,0,0)); 
+   win.setBackground(color_rgb(255,255,255)); 
+
 
    # Creating dots in the middle of each square
    for i in range(1,n+1):
       for j in range(1,n+1):
+
+         pt1 = Point((i-1)*grid_side, (j-1)*grid_side)
+         pt2 = Point((i)*grid_side, (j)*grid_side)
+         rect1 = Rectangle(pt1, pt2)
+         rect1.setFill(color_rgb(255,255,255))
+         rect1.draw(win)
+         
          center = Point((i-0.5)*grid_side,(j-0.5)*grid_side);
          cir = Circle(center, 1);
          cir.setFill(color_rgb(255,255,255))
          cir.draw(win)
+
 
    #Drawing the Queens;
    i = 1;
@@ -63,7 +72,7 @@ def findNextMove(curHVal):
    heuristic value decreases sharply
    It can move any one of n queens
    """
-   minHCalc = curHVal;     #Initializing to curHVal
+   minHCalc = float('inf');     #Initializing to max 
    minPlayerMove = 0;      #Initializing
    minNewPosition = (0,0);
    
@@ -83,7 +92,7 @@ def findNextMove(curHVal):
             minNewPosition = move;
          #print("\t\t new return vars are")   
    #print("hVal we are sending back is {}".format(minHCalc));
-   if minHCalc < curHVal:
+   if minHCalc <= curHVal:
       return (minPlayerMove, minNewPosition, minHCalc)
    else:
       return -1; #That we have reached local minima
@@ -194,7 +203,7 @@ def ai():
          print("Reached global minima, can make more moves !");
          break;
 
-      colorNode(queensPositions[queenNewPos[0]], 'black'); #turn old position black
+      colorNode(queensPositions[queenNewPos[0]], 'white'); #turn old position black
       
       queensPositions[queenNewPos[0]] = queenNewPos[1];
 
