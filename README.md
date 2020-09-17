@@ -47,5 +47,5 @@ Pink Nodes - Path taken.
 The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=mbi9hgKg-hU)
 
 Below 2 images show the start and end states respectively-    
-![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_START.png) ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/03_DFS_PACKMAN_END.png)
+![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/04_BFS_PACKMAN_START.png) ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/04_BFS_PACKMAN_END.png)
 
