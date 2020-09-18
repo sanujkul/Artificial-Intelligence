@@ -6,7 +6,8 @@
 ### iii.  03_packmanDFS.py
 ### iv.   04_packmanBFS.py
 ### v.    05a_hillClimbing_8Puzzle.py
-
+### vi.   005b_hillClimbing_4queens.py
+### vii.  05b2_hillClimbing_8queens.py
 ***
 
 ## i.    01_basicTicTakToe.py
@@ -60,4 +61,19 @@ The working of this appraoch [has been uploaded on this YouTube Video](https://w
 
 Following 2 images show the start and end states respectively-    
 ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/05_hillClmbing_8Puzzle_start.png) ![](https://github.com/sanujkul/ArtificialIntelligence-CED16/blob/master/Images/05_hillClmbing_8Puzzle_end.png)
+
+***
+
+## vi.   005b_hillClimbing_4queens.py
+In this program, 4 Queens game has been simulated using hill climbing technique. Queens have to be placed such that no queen attack each other
+
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=ZcQsixOocRc&list=PLD0rOb-SUEXZ9IMxkrxjcj0LJnzunQeAd&index=5)
+
+Following 2 images show the start and end states respectively-    
+![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_4Queens_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_4Queens_end.png)
+
+***
+
+
+## vii.  05b2_hillClimbing_8queens.py
 
