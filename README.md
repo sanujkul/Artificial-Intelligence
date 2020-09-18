@@ -8,6 +8,7 @@
 ### v.    05a_hillClimbing_8Puzzle.py
 ### vi.   005b_hillClimbing_4queens.py
 ### vii.  05b2_hillClimbing_8queens.py
+### viii. 06_Constrains_Sudoku.py
 ***
 
 ## i.    01_basicTicTakToe.py
@@ -84,3 +85,14 @@ Following 2 images show the start and end states respectively-
 ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_8Queens_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_8Queens_end.png)
 
 ***
+
+### viii. 06_Constrains_Sudoku.py  
+In this program,Sudoku has been solved using Constraint Satisfaction technique.
+
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=7F_EM4iAfRE&list=PLD0rOb-SUEXZ9IMxkrxjcj0LJnzunQeAd&index=7)
+
+Following Sudoku problem was taken from the internet:   
+![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/SampleSudokuQues.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/SampleSudokuSol.png)
+
+Following 2 images show the start and end states respectively-     
+![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/06_Constrains_Sudoku_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/06_Constrains_Sudoku_end.png)
