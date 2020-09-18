@@ -9,6 +9,7 @@
 ### vi.   005b_hillClimbing_4queens.py
 ### vii.  05b2_hillClimbing_8queens.py
 ### viii. 06_Constrains_Sudoku.py
+### ix.   07_packmanAStar.py
 ***
 
 ## i.    01_basicTicTakToe.py
@@ -86,7 +87,7 @@ Following 2 images show the start and end states respectively-
 
 ***
 
-### viii. 06_Constrains_Sudoku.py  
+## viii. 06_Constrains_Sudoku.py  
 In this program,Sudoku has been solved using Constraint Satisfaction technique.
 
 The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=7F_EM4iAfRE&list=PLD0rOb-SUEXZ9IMxkrxjcj0LJnzunQeAd&index=7)
@@ -96,3 +97,22 @@ Following Sudoku problem was taken from the internet:
 
 Following 2 images show the start and end states respectively-     
 ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/06_Constrains_Sudoku_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/06_Constrains_Sudoku_end.png)
+
+***
+
+## ix.   07_packmanAStar.py
+In this program, pacman is simulated and its way to find its goal to end node is demonstarated by using A* search Algorithm.  
+Heuristic is the manhattan distance. And the cost to get from one node to another is 1.
+We can see here that packman takes the shortest path (unlike Depth first search) and scan lesser area while finding path (unlike Breath First Search).
+
+Pink Nodes - CLOSED nodes. 
+Yellow Ball - Pacman. 
+Red Node - Goal Node/Path Taken.  
+Blue Nodes - Walls.  
+ 
+
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=0pKdbXYBgPM)
+
+Following 2 images show the start and end states respectively-    
+![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/07_packmanAStar_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/07_packmanAStar_end.png)
+
