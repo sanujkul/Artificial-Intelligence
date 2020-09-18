@@ -76,4 +76,11 @@ Following 2 images show the start and end states respectively-
 
 
 ## vii.  05b2_hillClimbing_8queens.py
+In this program, 8 Queens game has been simulated using hill climbing technique. Queens have to be placed such that no queen attack each other
 
+The working of this appraoch [has been uploaded on this YouTube Video](https://www.youtube.com/watch?v=q_YPeDci8oU&list=PLD0rOb-SUEXZ9IMxkrxjcj0LJnzunQeAd&index=5)
+
+Following 2 images show the start and end states respectively-    
+![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_8Queens_start.png) ![](https://github.com/sanujkul/Artificial-Intelligence/blob/master/Images/05b_hillClmbing_8Queens_end.png)
+
+***
